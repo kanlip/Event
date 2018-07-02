@@ -1,0 +1,141 @@
+
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Open Sans', sans-serif; */
+
+}
+/* h1,h2,h3,h4,h5,h6{
+  font-family: 'Old Standard TT', serif;
+} */
+/* .header{
+  background-color:rgba(0, 0, 0, 0.890);
+}  */
+
+#details{
+  margin: 0px 25px 25px 25px;
+}
+.detail-time{
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-create{
+  width: 40%;
+  margin: 0 auto;
+}
+textarea {
+  border: 0 none white;
+  padding: 0;
+  outline: none;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  }
+  .card{
+    width:400px;
+    padding: 20px 0 0 0;
+  }
+  
+  
+@media screen and (max-width: 799px) {
+  .carousel-image{
+    width: 95%;
+    height:300px;
+    padding-right: 20px
+  }
+ 
+  .card{
+    width: 400px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .form-create{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .description-card{
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  
+}
+@media screen and (max-width: 500px) {
+.card{
+    width:100%
+  }
+  
+  .description-card{
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .carousel-image{
+    width: 95%;
+    height:300px;
+  }
+  .form-create{
+    width: 80%;
+    padding-right: 80px
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .carousel-image{
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+
+   
+  }
+  .card{
+    max-width: 400px;
+  }
+  .event-container{
+    width: 70%;
+    padding: 0 15% 20px 15%;
+   
+  }
+  .description-card{
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+   
+  }
+/*   
+  #details{
+    width: 50%;
+  } */
+}
+
