@@ -83,8 +83,8 @@ function tokenForUser(user) {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'kanlip1527@gmail.com',
-    pass: 'Kanken01'
+    user: 'madi.today@gmail.com',
+    pass: '767778Kanin'
   }
 });
 router.post('/signup', function (req, res, next) {
@@ -101,7 +101,7 @@ router.post('/signup', function (req, res, next) {
         return next(err);
       }
       let mailOptions = {
-        from: 'kanlip1527@gmail.com',
+        from: 'madi.today@gmail.com',
         to: email,
         subject: 'Thank you for signing up with madi today',
         html: '<p><b>Thank you</b> for signing up with us , Madi Today. <a href="https://www.madi.today">Enter our site to login.</a></p>'

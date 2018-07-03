@@ -5,21 +5,21 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'kanlip1527@gmail.com',
-    pass: 'Kanken01'
+    user: 'madi.today@gmail.com',
+    pass: '767778Kanin'
   }
 });
 
 router.post('/', function (req, res) {
   console.log(req.body)
   let mailOptionforCustomer = {
-    from: 'kanlip1527@gmail.com',
+    from: 'madi.today@gmail.com',
     to: req.body.email,
     subject: 'Madi autogenerate reply',
     html: '<p><b>Thank you</b> for contacting our support. We will contact you back as soon as possible.</p>'
   };
   let mailOptionforSupport = {
-    from: 'kanlip1527@gmail.com',
+    from: 'madi.today@gmail.com',
     to: 'kan_lip@hotmail.com',
     subject: `${req.body.name} contacting support`,
     html: `<p>${req.body.message}<br/> <b>FROM ${req.body.email}</b></p> `
