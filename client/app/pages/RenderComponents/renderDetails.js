@@ -5,7 +5,7 @@ import CustomTabs from "../../Components/assets/jss/components/CustomTabs/Custom
 import tabsStyle from "../../Components/assets/jss/material-kit-react/views/componentsSections/tabsStyle";
 import Button from "../../Components/assets/jss/components/CustomButtons/Button";
 import Timestamp from "grommet/components/Timestamp";
-import FacebookProvider, { ShareButton } from "react-facebook";
+
 class RenderDetails extends Component {
   renderTimeStamp() {
     if (this.props.event.startTime !== undefined) {
